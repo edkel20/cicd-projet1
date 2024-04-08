@@ -126,7 +126,7 @@ jobs:
           config: baseUrl=http://localhost:4173
       - name: upload coverage reports to CodeCov
         if: matrix.browser == 'chrome'
-        uses: codecov/codecov-actions@v3
+        uses: codecov/codecov-action@v4.0.1
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
