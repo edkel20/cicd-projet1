@@ -27,7 +27,7 @@ jobs:
       - name: verify code
         run: npm run lint
       - name: verify vulnerabilities of dependencies
-        run: npm audit
+        run: npm audit fix
       - name: execute tests
         run: npm run test:ci
 
