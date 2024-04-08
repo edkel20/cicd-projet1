@@ -75,7 +75,7 @@ jobs:
       - name: build application frontend
         run: npm run build
       - name: upload build artifacts
-        uses: actions/upload-artifacts@v3
+        uses: actions/upload-artifact@v3
         with:
           name: build
           path: ./client/dist
